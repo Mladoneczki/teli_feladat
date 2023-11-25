@@ -1,0 +1,72 @@
+html {
+  background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
+  background-size: cover;
+}
+body {
+    display: block;
+  width: 1040px;
+  min-height: 100vh;
+  align-self: center;
+  margin-inline:auto;
+  padding: 0;
+  background-color: white;
+  padding: auto;
+}
+h1 {
+    margin-top: auto;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
+.head {
+  background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+  height: 6rem;
+}
+.gombok a{
+    display: block;
+    width: 6rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 1rem;
+    color: white;
+    grid-area: g;
+}
+.tablazat{
+    width: 400px;
+    height: fit-content;
+    border-collapse:collapse;
+    grid-area: t;
+}
+tr,td{
+    border-bottom: 1px solid blue;
+}
+.tablazat tr th{
+    font-weight: bold;
+    
+
+}
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+.vers {
+    grid-area: v;
+    line-height:
+    
+
+}
+footer{
+    background-color: blue;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'g t v';
+    grid-template-columns: auto 1fr, minmax(200px, 300px);
+    margin: auto;
+
+}
