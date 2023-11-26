@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 1040px;
-  height: 100vh;
+  min-height: 100vh;
   align-self: center;
   margin-inline: auto;
   background-color: white;
