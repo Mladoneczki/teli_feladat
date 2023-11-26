@@ -5,7 +5,7 @@ html {
   background-size: cover;
 }
 body {
-    width: 1040px;
+  width: 1040px;
   min-height: 100vh;
   margin: auto;
   background-color: white;
@@ -19,14 +19,14 @@ h1 {
   text-align: center;
   align-items: end;
   color: white;
-  padding-top:3rem;
+  padding-top: 3rem;
 }
 .head {
   background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
   height: 6rem;
 }
-.gombok{
-    margin-top: 1rem;
+.gombok {
+  margin-top: 1rem;
 }
 .gombok a {
   display: block;
@@ -37,7 +37,7 @@ h1 {
   margin-bottom: 4px;
   text-align: center;
   text-decoration: none;
-  background-color:var(--buttoncolor);
+  background-color: var(--buttoncolor);
   border-radius: 1rem;
   color: white;
   grid-area: g;
@@ -49,6 +49,7 @@ h1 {
   grid-area: t;
   margin-top: 1rem;
 }
+
 tr,
 td {
   border-bottom: 1px solid blue;
@@ -63,6 +64,11 @@ td {
   overflow-wrap: break-word;
   line-height: 1.5;
 }
+td a {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
 tr:nth-child(odd) {
   background-color: lightblue;
 }
@@ -75,19 +81,18 @@ tr:nth-child(odd) {
   margin: 0;
 }
 footer {
-    background-color: var(--buttoncolor);
-    height: 2.5rem;
-    text-align: center;
-    margin: 0;
-    padding-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--buttoncolor);
+  height: 2.5rem;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grid {
   display: grid;
   grid-template-areas: "g t v";
   grid-template-columns: 1fr 2fr 40%;
-  margin:0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
