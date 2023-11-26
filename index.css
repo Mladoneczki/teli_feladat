@@ -96,3 +96,43 @@ footer {
   grid-template-columns: 1fr 2fr 40%;
   margin: 0px 0px 0px 0px;
 }
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: auto;
+    grid-template-areas:
+      'g g g'
+      't t t'
+      'v v v';
+  }
+  .head{
+    height: fit-content;
+  }
+  h1 {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+  }
+
+  .tablazat {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+
+  td {
+    width: auto;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+  }
+  h2,p{
+    line-height: 1.5;
+    line-break: auto;
+  }
+  footer{
+    line-break: auto;
+  }
+}
