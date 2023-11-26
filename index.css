@@ -1,72 +1,94 @@
+@import url(allando.css);
+
 html {
   background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
   background-size: cover;
 }
 body {
-    display: block;
+  display: flex;
+  flex-direction: column;
   width: 1040px;
-  min-height: 100vh;
+  height: 100vh;
   align-self: center;
-  margin-inline:auto;
-  padding: 0;
+  margin-inline: auto;
   background-color: white;
   padding: auto;
+  padding-bottom: 0;
 }
 h1 {
-    margin-top: auto;
+  margin-top: auto;
   text-align: center;
-  align-items: center;
+  align-items: end;
   color: white;
+  padding-top:3rem;
 }
 .head {
   background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
   height: 6rem;
 }
-.gombok a{
-    display: block;
-    width: 6rem;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    text-decoration: none;
-    background-color: blue;
-    border-radius: 1rem;
-    color: white;
-    grid-area: g;
+.gombok{
+    margin-top: 1rem;
 }
-.tablazat{
-    width: 400px;
-    height: fit-content;
-    border-collapse:collapse;
-    grid-area: t;
+.gombok a {
+  display: block;
+  width: 12rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  text-decoration: none;
+  background-color:var(--buttoncolor);
+  border-radius: 1rem;
+  color: white;
+  grid-area: g;
 }
-tr,td{
-    border-bottom: 1px solid blue;
+.tablazat {
+  width: 410px;
+  height: fit-content;
+  border-collapse: collapse;
+  grid-area: t;
+  margin-top: 1rem;
 }
-.tablazat tr th{
-    font-weight: bold;
-    
-
+tr,
+td {
+  border-bottom: 1px solid blue;
 }
-tr:nth-child(odd){
-    background-color: lightblue;
+.tablazat tr th {
+  font-weight: bold;
+  text-align: center;
+}
+td {
+  text-align: left;
+  max-width: 33px;
+  overflow-wrap: break-word;
+  line-height: 1.5;
+}
+tr:nth-child(odd) {
+  background-color: lightblue;
 }
 
 .vers {
-    grid-area: v;
-    line-height:
-    
-
+  grid-area: v;
+  line-height: 30%;
+  padding: 2rem;
+  border: 1px solid grey;
+  margin: 0;
 }
-footer{
-    background-color: blue;
+footer {
+  background-color:var(--buttoncolor);
+  height: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 .grid {
-    display: grid;
-    grid-template-areas: 
-    'g t v';
-    grid-template-columns: auto 1fr, minmax(200px, 300px);
-    margin: auto;
-
+  display: grid;
+  grid-template-areas: "g t v";
+  grid-template-columns: 1fr 2fr 40%;
+  margin:0px 0px 0px 0px;
 }
