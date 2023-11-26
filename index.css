@@ -44,7 +44,7 @@ h1 {
 }
 .tablazat {
   width: 410px;
-  height: fit-content;
+  height: 1rem;
   border-collapse: collapse;
   grid-area: t;
   margin-top: 1rem;
