@@ -1,0 +1,110 @@
+@import url(allando.css);
+html {
+  background-image: url(GRID_TABLAZAT/kepek/hatter.jpg);
+  background-size: cover;
+}
+body {
+  width: 1040px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: white;
+  padding: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin-top: auto;
+  text-align: center;
+  align-items: end;
+  color: white;
+  padding-top: 3rem;
+}
+.head {
+  background-image: url(GRID_TABLAZAT/kepek/fejlec.jpg);
+  height: 6rem;
+}
+.gombok {
+  margin-top: 1rem;
+}
+.gombok a {
+  display: block;
+  width: 12rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--buttoncolor);
+  border-radius: 1rem;
+  color: white;
+  grid-area: g;
+}
+.felsonegy {
+  grid-area: f;
+
+}
+.alsonegy {
+  grid-area: a;
+  
+}
+.kepek{
+    margin-top: 2rem;
+    z-index: 2;
+    position: relative;
+    margin-right: -1rem;
+
+}
+img {
+  width: 160px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #bfbfbf;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+
+}
+div.rotate_left {
+  float: left;
+  transform: rotate(-8deg);
+}
+div.rotate_right {
+  float: left;
+  transform: rotate(7deg);
+}
+p{
+  text-align: justify;
+  margin: 2rem;
+  
+}
+h2{
+    margin: 2rem;
+}
+.szoveg{
+    border: 1px solid grey;
+    z-index: 1;
+}
+.szoveg h2 p {
+  grid-area: sz;
+  background-color: aqua;
+  padding: auto;
+  
+  
+}
+.grid {
+  display: grid;
+  grid-template-areas:
+    "g f sz"
+    "g a sz";
+  grid-template-columns: 20% 2fr 1.5fr;
+  
+}
+footer {
+  background-color: var(--buttoncolor);
+  height: 2.5rem;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
