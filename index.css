@@ -43,18 +43,18 @@ h1 {
 }
 .felsonegy {
   grid-area: f;
-
+  z-index: 3;
+  position: relative;
+  margin-right: -6rem;
 }
 .alsonegy {
   grid-area: a;
-  
+  z-index: 3;
+  position: relative;
+  margin-right: -6rem;
 }
-.kepek{
-    margin-top: 2rem;
-    z-index: 2;
-    position: relative;
-    margin-right: -1rem;
-
+.kepek {
+  margin-top: 2rem;
 }
 img {
   width: 160px;
@@ -62,7 +62,6 @@ img {
   border: 1px solid #bfbfbf;
   background-color: white;
   box-shadow: 10px 10px 5px #aaaaaa;
-
 }
 div.rotate_left {
   float: left;
@@ -72,24 +71,21 @@ div.rotate_right {
   float: left;
   transform: rotate(7deg);
 }
-p{
+p {
   text-align: justify;
   margin: 2rem;
-  
 }
-h2{
-    margin: 2rem;
+h2 {
+  margin: 2rem;
 }
-.szoveg{
-    border: 1px solid grey;
-    z-index: 1;
+.szoveg {
+  border: 1px solid grey;
+  z-index: 2;
+  position: relative;
 }
 .szoveg h2 p {
   grid-area: sz;
-  background-color: aqua;
   padding: auto;
-  
-  
 }
 .grid {
   display: grid;
@@ -97,7 +93,6 @@ h2{
     "g f sz"
     "g a sz";
   grid-template-columns: 20% 2fr 1.5fr;
-  
 }
 footer {
   background-color: var(--buttoncolor);
@@ -108,3 +103,67 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas:
+      "g"
+      "f"
+      "a"
+      "sz";
+    grid-template-columns: 1fr;
+  }
+  .head {
+    height: fit-content;
+  }
+  h1 {
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    line-break: auto;
+  }
+  .kepek {
+    max-width: fit-content;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  h2,
+  p {
+    line-height: 1.5;
+    line-break: auto;
+  }
+  footer {
+    line-break: auto;
+  }
+}
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  body {
+    width: auto; 
+  }
+
+  .grid {
+    grid-template-areas:
+      "g f sz"
+      "g a sz";
+    grid-template-columns: 1fr 2fr 1.5fr;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+
+  .kepek img {
+    max-width: 100%;
+  }
+}
+
